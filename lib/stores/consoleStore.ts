@@ -1,4 +1,4 @@
-import ProviderBase from '../providerBase';
+import StoreBase from '../storeBase';
 import LogLevel from '../logLevel';
 import Entry from '../entry';
 import * as chalk from 'chalk';
@@ -15,7 +15,7 @@ levelFuncMap[LogLevel.Error] = chalk.red;
 levelFuncMap[LogLevel.Verbose] = chalk.dim;
 levelFuncMap[LogLevel.Warning] = chalk.yellow;
 
-export default class ConsoleProvider extends ProviderBase {
+export default class ConsoleProvider extends StoreBase {
   showColor: boolean;
 
   constructor({showColor}: {showColor?: boolean} = {}) {

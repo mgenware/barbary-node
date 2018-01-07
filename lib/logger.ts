@@ -1,21 +1,21 @@
 import LogLevel from './logLevel';
 import FilterBase from './filterBase';
-import ProviderBase from './providerBase';
+import StoreBase from './storeBase';
 import Entry from './entry';
 
 export default class Logger {
-  private providerBase: ProviderBase;
+  private storeBase: StoreBase;
 
-  constructor(provider: ProviderBase, public filter: FilterBase|null) {
-    if (!provider) {
+  constructor(store: StoreBase, public filter: FilterBase|null) {
+    if (!store) {
       throw new Error('The provider argument cannot be null');
     }
-    this.providerBase = provider;
+    this.storeBase = store;
   }
 
   log(category: string, level: number, data: any) {
     const entry = new Entry(category, level, data);
-    this.providerBase.log(entry);
+    this.storeBase.log(entry);
   }
 
   error(category: string, data: any) {

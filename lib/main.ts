@@ -1,7 +1,7 @@
 export { default as FilterBase } from './filterBase';
-export { default as ProviderBase } from './providerBase';
+export { default as ProviderBase } from './storeBase';
 export { default as LogLevel } from './logLevel';
 export { default as Logger } from './logger';
 
-export { default as ConsoleProvider } from './providers/consoleProvider';
-export { default as EmptyProvider } from './providers/emptyProvider';
+export { default as ConsoleProvider } from './stores/consoleStore';
+export { default as EmptyProvider } from './stores/emptyStore';
