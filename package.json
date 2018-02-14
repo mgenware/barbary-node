@@ -1,6 +1,6 @@
 {
   "name": "barbary-node",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Another Node.js logger",
   "main": "dist/lib/main.js",
   "types": "dist/lib/main.d.ts",
@@ -17,13 +17,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/chalk": "^0.4.31",
-    "@types/node": "*",
-    "@types/jest": "^22.0.1",
-    "copyfiles": "*",
-    "jest": "^22.0.4",
-    "tslint": "^5.8.0",
-    "typescript": "*"
+    "@types/chalk": "^2.2.0",
+    "@types/jest": "^22.1.2",
+    "@types/node": "9.4.6",
+    "copyfiles": "^1.2.0",
+    "jest": "^22.3.0",
+    "tslint": "^5.9.1",
+    "typescript": "2.7.1"
   },
   "scripts": {
     "test": "yarn run clean && yarn run compile && yarn run lint && yarn run copy && yarn run dev_test",
@@ -41,6 +41,6 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "chalk": "^2.1.0"
+    "chalk": "^2.3.1"
   }
 }
