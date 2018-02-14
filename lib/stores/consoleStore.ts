@@ -1,7 +1,7 @@
 import StoreBase from '../storeBase';
 import LogLevel from '../logLevel';
 import Entry from '../entry';
-import * as chalk from 'chalk';
+import chalk from 'chalk';
 
 const levelStrMap: {[key: number]: string|null} = {};
 levelStrMap[LogLevel.Info] = 'INFO';
